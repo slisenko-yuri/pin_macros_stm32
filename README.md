@@ -1,0 +1,1 @@
+# pin_macros_stm32
