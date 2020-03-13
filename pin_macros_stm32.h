@@ -196,7 +196,7 @@ if (PIN_H(PIN2)) {}		// Истинно, если на входе порта пр
 
 
 
-#define _PM_SETL(port,bit,dummy)		(GPIO##port->BSRR = GPIO_BSRR_BR_##bit)
+#define _PM_SETL(port,bit,dummy)		(GPIO##port->BRR = GPIO_BRR_BR_##bit)
 #define _PM_SETH(port,bit,dummy)		(GPIO##port->BSRR = GPIO_BSRR_BS_##bit)
 #define _PM_SET(port,bit,val)			_PM_SET##val(port,bit,dummy)
 #define _PM_CLRL(port,bit,dummy)		_PM_SETH(port,bit,dummy)
